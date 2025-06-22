@@ -3,12 +3,12 @@
 ### Build ProteinMPNN docker image.
 
 ```sh
-docker build -t ProteinMPNN:cli -f docker/Dockerfile .
+docker build -t proteinmpnn:cli -f docker/Dockerfile .
 ```
 
 ### Save ProteinMPNN docker image.
 
 ```sh
-docker save ProteinMPNN:cli | gzip > docker_images/ProteinMPNN_cli.tar.gz
+docker save proteinmpnn:cli | gzip > docker_images/proteinmpnn_cli.tar.gz
 ```
 
