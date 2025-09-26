@@ -19,9 +19,11 @@ RUN pip install --upgrade pip
 
 RUN pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --index-url https://download.pytorch.org/whl/cu117
 
+RUN pip install fastapi[all] 
 
 ENV PYTHONPATH=/app/ProteinMPNN/
 ENV PROTEIN_MPNN=/app/ProteinMPNN/
 
 RUN pip3 install biopython
+
 
